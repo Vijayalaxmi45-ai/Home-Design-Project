@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,3 +141,147 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: maroon;
+            color: black;
+        }
+        .main-div {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            padding: 20px;
+        }
+        /* Container for the contact form */
+        .contact-container {
+            background-color: rgb(195, 213, 206);
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0.9;
+        }
+
+        /* Heading Styles */
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            color: maroon;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 20px;
+                max-width: 80%;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            input, 
+            textarea {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+
+            button {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-container {
+                padding: 15px;
+                max-width: 90%;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            input, 
+            textarea {
+                font-size: 0.85rem;
+                padding: 7px;
+            }
+
+            button {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-div">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <form action="#" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-control" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" class="form-control" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" class="form-control" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+>>>>>>> ce96fbe2bf778c4cc21fc26d0f766a280060656a

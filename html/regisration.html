@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,3 +92,98 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Register</title>
+    <style>
+        body {
+            background-color: rgb(214, 216, 213);
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+        }
+        div {
+            width: 40%;
+            padding: 20px;
+            box-shadow: 1px 1px 2px rgb(247, 199, 189);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            background-color: maroon;
+            border-radius: 5px;
+        }
+        h1 {
+            color: aliceblue;
+            padding-top: 5%;
+        }
+        .form-control {
+            width: 90%;
+            margin-bottom: 10px;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            width: 45%;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        #btn-submit {
+            background-color: green;
+        }
+        #btn-cancle {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <form id="registration-form">
+        <center>
+        <div>
+            
+                <h1>Register</h1>
+                <input type="text" placeholder="Enter name" class="form-control" id="name" required>
+                <input type="number" placeholder="Enter Phone no" min="10" class="form-control" id="phone" required>
+                <input type="email" placeholder="Enter email address" class="form-control" id="email" required>
+                <input type="password" placeholder="Enter password" id="psw" class="form-control" required>
+                <input type="password" placeholder="Confirm password" id="cpsw" class="form-control" required>
+                <button type="button" id="btn-submit">Submit</button>
+                <button type="reset" id="btn-cancle">Cancel</button>
+        </div>
+    </center>
+    </form>
+
+    <script rel="stylesheet" href="js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript for password matching and form validation
+        document.getElementById('btn-submit').addEventListener('click', function() {
+            let psw1 = document.getElementById('psw').value;
+            let psw2 = document.getElementById('cpsw').value;
+
+            // Password validation
+            if (psw1 !== psw2) {
+                alert('Passwords do not match!');
+            } else {
+                // You can handle successful submission here, like redirecting to a login page or submitting data
+                alert('Registration successful!');
+                // Uncomment the line below to redirect
+                // window.location.href = "login.html";
+            }
+        });
+    </script>
+</body>
+</html>
+>>>>>>> ce96fbe2bf778c4cc21fc26d0f766a280060656a
